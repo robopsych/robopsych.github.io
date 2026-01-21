@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $font-body;
+  font-size: $font-size-base;
+  line-height: $line-height-normal;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $color-tertiary;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  padding-left: $spacing-6;
+}
+
+li {
+  margin-bottom: $spacing-2;
+}
+
+code {
+  font-family: $font-mono;
+  font-size: 0.9em;
+  background: $color-bg-subtle;
+  padding: $spacing-1 $spacing-2;
+  border-radius: $radius-sm;
+  color: $color-secondary;
+}
+
+pre {
+  font-family: $font-mono;
+  font-size: $font-size-sm;
+  background: $color-bg-subtle;
+  border-radius: $radius-lg;
+  padding: $spacing-6;
+  overflow-x: auto;
+  margin: $spacing-8 0;
+
+  code {
+    background: none;
+    padding: 0;
+    color: $color-text;
+  }
+}
+
+blockquote {
+  border-left: 3px solid $color-primary;
+  padding-left: $spacing-4;
+  margin: $spacing-6 0;
+  color: $color-text-muted;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: $gradient-rainbow;
+  margin: $spacing-12 0;
+  border-radius: $radius-full;
+}
+
+::selection {
+  background-color: rgba($color-primary, 0.2);
+}

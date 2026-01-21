@@ -1,0 +1,35 @@
+// Minimal utility classes
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: $color-text-muted;
+}
+
+.mt-8 {
+  margin-top: $spacing-8;
+}
+
+.mb-8 {
+  margin-bottom: $spacing-8;
+}
+
+.gradient-text {
+  background: $gradient-hero;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// Rainbow underline decoration
+.rainbow-bar {
+  height: 4px;
+  background: $gradient-rainbow;
+  border-radius: $radius-full;
+}

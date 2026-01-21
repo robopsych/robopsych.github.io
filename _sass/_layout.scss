@@ -1,0 +1,175 @@
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+.site-main {
+  min-height: calc(100vh - 160px);
+  padding-top: 80px;
+}
+
+// Hero - Minimal & Bold
+.hero {
+  padding: $spacing-20 0 $spacing-12;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-bold;
+  margin-bottom: $spacing-4;
+  letter-spacing: -0.02em;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-5xl;
+  }
+}
+
+.hero-subtitle {
+  font-size: $font-size-lg;
+  color: $color-text-muted;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+// Posts Section
+.posts-section {
+  padding: $spacing-8 0 $spacing-20;
+}
+
+.section-title {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $color-text-subtle;
+  margin-bottom: $spacing-8;
+}
+
+// Posts List - Minimal
+.posts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-2;
+}
+
+.no-posts {
+  text-align: center;
+  color: $color-text-muted;
+  padding: $spacing-12 0;
+}
+
+// Post Layout
+.post {
+  padding: $spacing-12 0 $spacing-20;
+}
+
+.post-header {
+  margin-bottom: $spacing-8;
+  text-align: center;
+}
+
+.post-title {
+  font-size: $font-size-3xl;
+  margin-bottom: $spacing-3;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-4xl;
+  }
+}
+
+.post-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $spacing-3;
+  color: $color-text-subtle;
+  font-size: $font-size-sm;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-2;
+}
+
+.tag {
+  display: inline-block;
+  padding: $spacing-1 $spacing-3;
+  background: $gradient-primary;
+  color: white;
+  border-radius: $radius-full;
+  font-size: 0.75rem;
+  font-weight: $font-weight-medium;
+}
+
+.post-content {
+  font-size: $font-size-lg;
+  line-height: 1.8;
+
+  h2, h3 {
+    margin-top: $spacing-12;
+    margin-bottom: $spacing-4;
+  }
+
+  p {
+    margin-bottom: $spacing-6;
+    color: $color-text;
+  }
+
+  a {
+    background: linear-gradient(to right, $color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.post-footer {
+  margin-top: $spacing-16;
+  text-align: center;
+}
+
+.back-link {
+  color: $color-text-muted;
+  font-weight: $font-weight-medium;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+// Page Layout
+.page {
+  padding: $spacing-12 0 $spacing-20;
+}
+
+.page-header {
+  margin-bottom: $spacing-8;
+}
+
+.page-title {
+  font-size: $font-size-3xl;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-4xl;
+  }
+}
+
+.page-content {
+  font-size: $font-size-lg;
+  line-height: 1.8;
+
+  h2, h3 {
+    margin-top: $spacing-12;
+    margin-bottom: $spacing-4;
+  }
+
+  p {
+    margin-bottom: $spacing-6;
+  }
+}

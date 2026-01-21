@@ -1,0 +1,68 @@
+// Syntax Highlighting - Light theme with colorful accents
+
+.highlight {
+  background-color: $color-bg-subtle;
+  border-radius: $radius-lg;
+
+  pre {
+    margin: 0;
+    padding: $spacing-6;
+    background: transparent;
+  }
+
+  code {
+    background: transparent;
+    padding: 0;
+    color: $color-text;
+  }
+
+  // Comments
+  .c, .c1, .cm, .cs {
+    color: $color-text-subtle;
+    font-style: italic;
+  }
+
+  // Keywords
+  .k, .kc, .kd, .kn, .kp, .kr, .kt {
+    color: $color-tertiary;
+    font-weight: 500;
+  }
+
+  // Strings
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss {
+    color: $color-accent-2;
+  }
+
+  // Numbers
+  .m, .mb, .mf, .mh, .mi, .mo, .mx, .il {
+    color: $color-accent-1;
+  }
+
+  // Operators
+  .o, .ow {
+    color: $color-tertiary;
+  }
+
+  // Functions
+  .nf, .fm {
+    color: $color-secondary;
+  }
+
+  // Classes
+  .nc {
+    color: $color-primary;
+    font-weight: 500;
+  }
+
+  // Variables
+  .n, .na, .nb, .ni, .nl, .nn, .nv {
+    color: $color-text;
+  }
+}
+
+:not(pre) > code {
+  background-color: $color-bg-subtle;
+  padding: $spacing-1 $spacing-2;
+  border-radius: $radius-sm;
+  color: $color-secondary;
+}
